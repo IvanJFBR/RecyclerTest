@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         rv_carro_list.layoutManager = LinearLayoutManager(this)
 
-        rv_carro_list.adapter = AnimalAdapter(carros, this)
+        rv_carro_list.adapter = CarrosAdapter(carros, this)
     }
 
     private fun addCarros() {
