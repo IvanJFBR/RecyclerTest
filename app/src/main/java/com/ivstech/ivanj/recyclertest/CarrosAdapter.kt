@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.animal_list_item.view.*
+import kotlinx.android.synthetic.main.carro_list_item.view.*
 
 class AnimalAdapter(val items : ArrayList<String>, val context: Context) : RecyclerView.Adapter<ViewHolder>() {
 
@@ -14,14 +14,14 @@ class AnimalAdapter(val items : ArrayList<String>, val context: Context) : Recyc
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ViewHolder {
-        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.animal_list_item, parent, false))
+        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.carro_list_item, parent, false))
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder?.tvAnimalType?.text = items.get(position)
+        holder?.tvCarroType?.text = items.get(position)
     }
 }
 
 class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-    val tvAnimalType = view.tv_animal_type
+    val tvCarroType = view.tv_carro_type
 }
